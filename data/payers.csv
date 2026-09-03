@@ -1,0 +1,11 @@
+payer_id,payer_name,plan_type,avg_processing_days,avg_response_days,filing_deadline_days,preferred_contact_method
+PAY001,BlueCross Health,Commercial,14,5,90,Portal
+PAY002,AetnaCare,Commercial,18,7,120,Portal
+PAY003,UnitedCare,Commercial,16,6,90,Email
+PAY004,Cigna Health,Commercial,20,8,120,Portal
+PAY005,Medicare,Government,21,9,365,Portal
+PAY006,Medicaid,Government,25,11,365,Portal
+PAY007,Humana,Commercial,19,7,180,Phone
+PAY008,Kaiser Health,Commercial,13,5,90,Portal
+PAY009,Anthem,Commercial,17,6,90,Email
+PAY010,Molina Health,Government,27,12,180,Portal

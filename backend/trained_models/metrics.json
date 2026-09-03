@@ -1,0 +1,62 @@
+{
+  "model_version": "1.0.0",
+  "trained_at": "2026-09-03 12:19:50Z",
+  "features": {
+    "numeric": [
+      "days_in_ar",
+      "outstanding_amount",
+      "billed_amount",
+      "allowed_amount",
+      "paid_amount",
+      "patient_responsibility",
+      "expected_reimbursement",
+      "followup_count",
+      "resubmission_count",
+      "days_since_last_response",
+      "avg_processing_days",
+      "avg_response_days",
+      "filing_deadline_days"
+    ],
+    "categorical": [
+      "payer_id",
+      "claim_type",
+      "place_of_service",
+      "claim_status",
+      "denial_status",
+      "denial_code",
+      "denial_reason",
+      "authorization_required",
+      "authorization_status",
+      "network_status",
+      "appeal_status"
+    ]
+  },
+  "models": {
+    "delay_model": {
+      "target": "was_delayed",
+      "algorithm": "HistGradientBoostingClassifier",
+      "metrics": {
+        "accuracy": 0.792,
+        "precision": 0.8207,
+        "recall": 0.9305,
+        "f1": 0.8722,
+        "roc_auc": 0.7462,
+        "test_samples": 2000,
+        "train_samples": 8000
+      }
+    },
+    "denial_model": {
+      "target": "was_denied",
+      "algorithm": "HistGradientBoostingClassifier",
+      "metrics": {
+        "accuracy": 0.82,
+        "precision": 0.6806,
+        "recall": 0.5464,
+        "f1": 0.6061,
+        "roc_auc": 0.7818,
+        "test_samples": 2000,
+        "train_samples": 8000
+      }
+    }
+  }
+}
