@@ -1,4 +1,4 @@
-# RecoverAI — Autonomous AR Follow-Up & Revenue Cycle AI Platform
+# REVIVE - Revenue Intelligence and Virtual Intervention Engine
 
 > **Autonomous Healthcare Accounts Receivable (AR) Follow-Up, Denial Dispute, and Revenue Recovery System**  
 > Built for hospitals, health systems, and physician practices to automatically identify at-risk claims, formulate clinical dispute strategies, draft grounded appeal packets, simulate payer responses, and close the recovery loop.
