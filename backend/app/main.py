@@ -14,8 +14,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="AR Follow-Up AI API",
-    description="Backend service for RecoverAI - Healthcare Accounts Receivable Follow-Up and Revenue Recovery Platform",
+    title="REVIVE API",
+    description="Backend service for REVIVE: Review Intelligence & Virtual Intervention Engine",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -43,7 +43,7 @@ app.include_router(api_router, prefix="/api")
 @app.get("/")
 def root():
     return {
-        "name": "RecoverAI - AR Follow-Up Automation API",
+        "name": "REVIVE: Review Intelligence & Virtual Intervention Engine API",
         "status": "operational",
         "docs_url": "/docs",
         "health_url": "/health",

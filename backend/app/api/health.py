@@ -28,7 +28,7 @@ def health_check(db: Session = Depends(get_db)):
 
     return {
         "status": "healthy" if db_status.get("status") == "connected" else "degraded",
-        "app_name": "AR Follow-Up AI (RecoverAI)",
+        "app_name": "REVIVE: Review Intelligence & Virtual Intervention Engine",
         "version": "1.0.0",
         "phase": 2,
         "timestamp": datetime.now(timezone.utc).isoformat(),

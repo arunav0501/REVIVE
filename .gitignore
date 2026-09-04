@@ -54,15 +54,9 @@ backend/data/faiss/
 # IDE & OS
 .DS_Store
 .idea/
-.vscode/*
-!.vscode/settings.json
-
+.vscode/
 *.swp
 *.swo
-.~lock.*
-~$*
-*.tmp
-
 
 # Logs
 *.log
